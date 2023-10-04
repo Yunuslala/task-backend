@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 const specs = swaggerJsdoc(options);
 app.get('/',async(req,res)=>{
-    res.status(200).send({"msg":"welcome"})
+    res.status(200).send({"msg":"welcome you are live now"})
 })
 app.use('/todo-task-api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 app.use('/User',UserRouter);
