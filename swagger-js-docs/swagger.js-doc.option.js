@@ -16,6 +16,9 @@ const options = {
             },
         }
     },
+    operationsSorter: 'alpha',  // Sort operations alphabetically
+  showRequestHeaders: false,  // Hide request headers
+  showRequestBodyDescription: true,
     apis: [
         './swagger-js-docs/*.js',
     ]
